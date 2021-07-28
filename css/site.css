@@ -10,6 +10,14 @@
 	--white: #f8f9fa;
 }
 
+code[class*="language-"],
+pre[class*="language-"] {
+white-space: pre-wrap;
+word-break: break-all;
+word-wrap: break-word;
+font-size: 1.5rem;
+}
+
 body {
 	background: url(../img/kitsugi.gif);
 	background-size: cover;
@@ -74,6 +82,10 @@ main > .container {
 	border-radius: 15px;
 	background: rgba(34, 34, 34, 0.3);
 	transition: background 1s;
+}
+
+.checklist > li i {
+	color: var(--gold);
 }
 
 .footer-radius {

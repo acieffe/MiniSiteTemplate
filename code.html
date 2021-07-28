@@ -18,6 +18,7 @@
 
 		<link href="css/all.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/site.css" />
+		<link rel="stylesheet" href="css/prism.css" />
 	</head>
 
 	<body class="d-flex flex-column h-100">
@@ -89,8 +90,26 @@
 		</nav>
 
 		<!-- ====== Maiu Section ====== -->
-		<main class="flex-shrink-0 d-flex pb-5">
-			<div class="container col-xxl-8 px-4 py-5 bg-black-8 text-light">
+		<main class="flex-shrink-0 d-flex my-5 pb-5">
+			<div class="container col-xxl-8 px-5 py-5 bg-black-8 text-light">
+            <h2 class="border-1 border-bottom border-light">The Code for APP NAME</h2>
+            <div class="row row-cols-1 row-cols-lg-2">
+               <div class="col-lg-8">
+                  <pre class="line-numbers">
+                     <code class="language-javascript">
+                           // Call Hello World alert
+                           function helloWorld() {
+                              alert("Hello, World");
+                           }
+                     </code>
+                  </pre>
+               </div>
+               <div class="col-lg-4">
+                  <p>The Code is structured in one function</p>
+                  <h5>Hello World</h5>
+                  <p>Hello World is a function that displays an alert the the message of, "Hello, World"</p>
+               </div>
+            </div>
 			</div>
 		</main>
 
@@ -154,6 +173,14 @@
 			integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
 			crossorigin="anonymous"
 		></script>
-		<script src="js/site.js"></script>
+		<script src="js/prism.js"></script>
+      <script>
+         Prism.plugins.NormalizeWhitespace.setDefaults({
+            'remove-trailing': true,
+            'remove-indent': true,
+            'left-trim': true,
+            'right-trim': true
+         })
+      </script>
 	</body>
 </html>
