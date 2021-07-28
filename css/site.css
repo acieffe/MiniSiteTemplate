@@ -95,7 +95,7 @@ footer li {
 }
 
 footer a:hover,
-footer svg:hover {
+footer i:hover {
 	color: var(--white);
 }
 
@@ -109,12 +109,12 @@ footer svg:hover {
 }
 
 @media only screen and (min-width: 992px) {
-   .nav-link svg {
+   .nav-link i {
       color: var(--gold);
    }
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1060px) {
 	.header-logo {
 		font-size: 2.5em;
 	}
