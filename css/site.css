@@ -10,14 +10,6 @@
 	--white: #f8f9fa;
 }
 
-code[class*="language-"],
-pre[class*="language-"] {
-white-space: pre-wrap;
-word-break: break-all;
-word-wrap: break-word;
-font-size: 1.5rem;
-}
-
 body {
 	background: url(../img/kitsugi.gif);
 	background-size: cover;
@@ -32,9 +24,7 @@ a {
 	font-weight: 600;
 }
 
-main > .container {
-	padding: 60px 15px 0;
-}
+
 .sticky-nav {
 	position: fixed;
 	left: 0;
@@ -190,4 +180,10 @@ footer i:hover {
 
 .bg-steel {
 	background-image: linear-gradient(to left bottom, var(--dkSteel), var(--ltSteel), var(--dkSteel));
+}
+
+code[class*="language-"], pre[class*="language-"] {
+	white-space: pre-wrap;
+	word-break: break-all;
+	word-wrap: break-word;
 }
