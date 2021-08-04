@@ -78,16 +78,15 @@ a {
 	color: var(--gold);
 }
 
+#results b {
+	color: var(--gold);
+}
+
 .footer-radius {
 	border-radius: 20px 20px 0 0;
 }
 
-.no-bullet {
-	list-style-type: none;
-}
-
 .footer-list {
-	padding: 0;
 	line-height: 1;
 	font-size: smaller;
 }
@@ -122,6 +121,12 @@ footer i:hover {
 	}
 }
 
+@media screen and (max-width: 767px) {
+	#de-logo {
+		width: 50%;
+	}
+}
+
 @media only screen and (max-width: 500px) {
 	.header-logo {
 		font-size: 1.5em;
@@ -134,12 +139,20 @@ footer i:hover {
 	}
 }
 
+.minHeight {
+	height: 100%;
+}
+
 .bg-gold {
 	background-image: linear-gradient(to left bottom, var(--ltGold), var(--dkGold), var(--ltGold));
 }
 
 .border-gold {
 	border: var(--gold) 3px groove;
+}
+
+.border-bottom-gold {
+	border-bottom: var(--gold) 3px groove;
 }
 
 .text-gold {
@@ -186,4 +199,5 @@ code[class*="language-"], pre[class*="language-"] {
 	white-space: pre-wrap;
 	word-break: break-all;
 	word-wrap: break-word;
+	font-size: .85rem !important;
 }
